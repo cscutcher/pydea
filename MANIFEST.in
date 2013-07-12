@@ -1,0 +1,3 @@
+include pydea/config/deployment.ini_tmpl
+recursive-include pydea/public *
+recursive-include pydea/templates *
