@@ -3,19 +3,14 @@ pydea
 
 Idea tracking system
 
-Installation and Setup
-======================
+Getting Started
+---------------
 
-Install ``pydea`` using easy_install::
+- cd <directory containing this file>
 
-    easy_install pydea
+- $venv/bin/python setup.py develop
 
-Make a config file as follows::
+- $venv/bin/initialize_pydea_db development.ini
 
-    paster make-config pydea config.ini
+- $venv/bin/pserve development.ini
 
-Tweak the config file as appropriate and then setup the application::
-
-    paster setup-app config.ini
-
-Then you are ready to go.

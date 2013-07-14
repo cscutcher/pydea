@@ -1,3 +1,2 @@
-include pydea/config/deployment.ini_tmpl
-recursive-include pydea/public *
-recursive-include pydea/templates *
+include *.txt *.ini *.cfg *.rst
+recursive-include pydea *.ico *.png *.css *.gif *.jpg *.pt *.txt *.mak *.mako *.js *.html *.xml
