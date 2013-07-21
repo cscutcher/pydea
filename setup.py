@@ -18,6 +18,9 @@ requires = [
     'waitress',
     'apex',
     'docopt',
+    'paste',
+    'WebError',
+    'repoze.tm2',
 ]
 
 setup(
@@ -41,7 +44,7 @@ setup(
     test_suite='pydea',
     install_requires=requires,
     entry_points={
-        "paste.app_factory": "main=pydea:main",
+        "paste.app_factory": "main=pydea:wsgi_factory",
         "console_scripts": ["initialise_pydea_db=pydea.scripts.initialise_db:main"]
     },
 )

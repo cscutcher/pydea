@@ -23,7 +23,7 @@ def main(argv=sys.argv[1:]):
     config_uri = options["<config-path>"]
 
     setup_logging(config_uri)
-    settings = get_appsettings(config_uri)
+    settings = get_appsettings(config_uri, name="pydea")
     engine = engine_from_config(settings, 'sqlalchemy.')
 
     pydea.models.initialise(engine)
